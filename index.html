@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="/assets/images/meta.jpg" />
+    <title>Tuniflow.com - Créez des chatbots intelligents pour votre service client</title>
+    <link rel="icon" href="/assets/images/favicon/favicon.png" type="image/x-icon">
+    
+    <!-- External Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+    
+        <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+             <img class="mob-logo" src="/assets/images/logo/logo (1).png" width="200px" alt="Tuniflow Logo">
+           
+        </div>
+        
+        <div class="desktop-menu">
+                 <a href="#home" class="logo"><img src="/assets/images/logo/logo (1).png" width="200px" alt="Tuniflow Logo"></a>
+            <ul class="nav-links">
+                <li><a href="#home">Page d'accueil</a></li>
+                <li><a href="#about">Caractéristiques</a></li>
+                <li><a href="#pricing">Tarifs</a></li>
+                <li><a href="#contact">Contactez-nous</a></li>
+            </ul>
+            
+            <div class="auth-buttons">
+                <a href="https://app.tuniflow.com">
+                    <button class="auth-button login">Se connecter</button>
+                </a>
+                <a href="https://app.tuniflow.com/register">
+                    <button class="auth-button signup">S'inscrire</button>
+                </a>
+            </div>
+
+            <div class="lang-switcher">
+                <a href="/" class="lang-btn active" data-lang="fr">FR</a>
+                <span class="lang-separator">|</span>
+                <a href="/arabic.html" class="lang-btn" data-lang="ar">عربي</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-nav">
+        <div class="nav-container">
+            <div class="close-menu" onclick="toggleMenu()">✕</div>
+            <div class="mobile-logo-container">
+                <a href="#home" class="mobile-logo "><img src="/assets/images/logo/logo (1).png" width="120px" alt="Tuniflow Logo" ></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" onclick="toggleMenu()">Page d'accueil</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Caractéristiques</a></li>
+                <li><a href="#pricing" onclick="toggleMenu()">Tarifs</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contactez-nous</a></li>
+            </ul>
+            
+            <div class="auth-buttons">
+                <a href="https://app.tuniflow.com">
+                    <button class="auth-button login">Se connecter</button>
+                </a>
+                <a href="https://app.tuniflow.com/register">
+                    <button class="auth-button signup">S'inscrire</button>
+                </a>
+            </div>
+            
+            <div class="lang-switcher">
+                <a href="/" class="lang-btn active" data-lang="fr">FR</a>
+                <span class="lang-separator">|</span>
+                <a href="/arabic.html" class="lang-btn" data-lang="ar">عربي</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>Améliorez le service client avec un chatbot intelligent</h1>
+                <p>Vous êtes submergé par les messages et n'avez pas le temps de répondre ? Laissez le chatbot répondre à votre place ! Il comprend l'arabe tunisien et répond instantanément.</p>
+                <a href="https://app.tuniflow.com" class="cta-button">
+                    <i class="fas fa-rocket"></i> Commencez maintenant !
+                </a>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="/assets/images/phone.png" alt="Chatbot sur mobile">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Les principales fonctionnalités</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <img src="/assets/images/icons/communication.png" width="80px">
+                    </div>
+                    <h3>Compréhension complète du dialecte tunisien</h3>
+                    <p>Utilise un modèle NLP ajusté qui comprend les différents dialectes tunisiens et même les erreurs linguistiques.</p>
+                    
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                         <img src="/assets/images/icons/artificial-intelligence.png" width="80px">
+                    </div>
+                    <h3>Réponses intelligentes</h3>
+                    <p>Soutenu par les dernières technologies d'intelligence artificielle de ChatGPT, il offre une expérience de conversation naturelle où l'on a l'impression de parler à un véritable humain !</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon ">
+                    <img src="/assets/images/icons/web-page-customisation.png" width="80px">
+                    </div>
+                    <h3>Personnalisation selon votre domaine</h3>
+                    <p>Peut être personnalisé en fonction du type de service ou de domaine de vos ventes. Le bot peut comprendre et répondre aux questions spécifiques à votre secteur.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div>
+                     <img src="/assets/images/icons/social-media1.png" width="80px">
+                       
+                    </div>
+                    <h3>Réseaux sociaux</h3>
+                    <p>Connectez votre bot à Facebook et permettez à vos clients de vous contacter directement depuis les plateformes qu'ils utilisent.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon ">
+                        <img src="/assets/images/icons/data-analysis.png" width="80px">
+                    </div>
+                    <h3>Statistiques et analyses</h3>
+                    <p>Un tableau de bord affichant les questions les plus fréquentes, le nombre de demandes, le taux de conversion...</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon ">
+                        <img src="/assets/images/icons/2370558-200.png" width="80px">
+                    </div>
+                    <h3>Réponses instantanées</h3>
+                    <p>Le bot répond rapidement et précisément aux questions des clients, leur fournissant les informations qu'ils recherchent en quelques secondes.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                         <img src="/assets/images/icons/easy-to-use.png" width="80px">
+                       
+                    </div>
+                    <h3>Facilité d'utilisation</h3>
+                    <p>L'interface du bot est simple et facile à comprendre, même un client peut l'utiliser sans difficulté.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon ">
+                         <img src="/assets/images/icons/box.png" width="80px">
+                       
+                    </div>
+                    <h3>Gestion des commandes</h3>
+                    <p>Le bot peut aider le client à passer des commandes et à vérifier facilement les informations de la commande.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Comment ça marche</h2>
+            <div class="steps">
+                <div class="step" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3>S'inscrire</h3>
+                    <p>Créez un compte sur notre plateforme pour commencer à utiliser les services que nous proposons.</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h3>Créer le bot</h3>
+                    <p>Créez votre propre bot sur la plateforme pour commencer à le personnaliser et définir les fonctionnalités que vous souhaitez.</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h3>Personnaliser le bot</h3>
+                    <p>Modifiez les caractéristiques du bot pour qu'il corresponde à vos besoins et à vos préférences.</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <h3>Connecter le bot à votre page Facebook</h3>
+                    <p>Connectez le bot à votre page Facebook pour qu'il réponde automatiquement aux messages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container" data-aos="fade-up">
+            <h2>Voulez-vous améliorer l'expérience client sur votre page Facebook et la rendre plus facile et plus rapide ?</h2>
+            <p>Rejoignez des centaines d'entreprises qui ont amélioré l'expérience client grâce à nos bots intelligents.</p>
+            <a href="https://app.tuniflow.com/register" class="cta-button-white">
+                <i class="fas fa-gift"></i> Essayez-le gratuitement
+            </a>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Tarification</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card "  data-aos="fade-up">
+                    <h3>Medium Plans</h3>
+                    <div class="price">60 TND<span>/mois</span></div>
+                    <ul class="features-list">
+                        <li>Jusqu'à 100 messages par jour</li>
+                        <li>Support Facebook & Instagram</li>
+                        <li>Tableau de bord analytique</li>
+                        <li>Support client prioritaire</li>
+                    </ul>
+                    <a href="#" class="subscribe-button primary-button">S'abonner maintenant</a>
+                </div>
+                <div class="pricing-card featured"  data-aos="fade-up">
+                    <h3>Medium Plans</h3>
+                    <div class="price">60 TND<span>/mois</span></div>
+                    <ul class="features-list">
+                        <li>Jusqu'à 100 messages par jour</li>
+                        <li>Support Facebook & Instagram</li>
+                        <li>Tableau de bord analytique</li>
+                        <li>Support client prioritaire</li>
+                    </ul>
+                    <a href="#" class="subscribe-button primary-button">S'abonner maintenant</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" >
+                    <h3>Medium Plans</h3>
+                    <div class="price">60 TND<span>/mois</span></div>
+                    <ul class="features-list">
+                        <li>Jusqu'à 100 messages par jour</li>
+                        <li>Support Facebook & Instagram</li>
+                        <li>Tableau de bord analytique</li>
+                        <li>Support client prioritaire</li>
+                    </ul>
+                    <a href="#" class="subscribe-button primary-button">S'abonner maintenant</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <div class="faq-container">
+        <div class="faq-header" data-aos="fade-up">
+            <h2>Questions fréquemment posées</h2>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-question">
+                Quel service proposez-vous ?
+            </div>
+            <div class="faq-answer">
+                <p>Nous proposons un service de bot pour la communication automatique sur les pages Facebook, où les messages des clients sont répondus automatiquement, 24h/24 et 7j/7, rapidement et efficacement.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question">
+                Y a-t-il un abonnement mensuel/annuel ?
+            </div>
+            <div class="faq-answer">
+                <p>Oui, nous avons des plans d'abonnement mensuels et annuels. Les prix varient en fonction des fonctionnalités choisies et du nombre de pages que vous souhaitez connecter au bot.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-question">
+                Comment vérifier si le bot est bien connecté à la page ?
+            </div>
+            <div class="faq-answer">
+                <p>Après avoir connecté le bot à la page, vous pouvez tester en envoyant un message à la page et vérifier si le bot y répond correctement.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-question">
+                Le bot partage-t-il les données des clients avec des tiers ?
+            </div>
+            <div class="faq-answer">
+                <p>Non, nous respectons entièrement la vie privée des données des clients et nous ne les partageons avec aucun tiers sans le consentement explicite de l'utilisateur.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="faq-question">
+                Quelles sont les permissions du bot sur la page Facebook ?
+            </div>
+            <div class="faq-answer">
+                <p>Le bot peut lire les messages envoyés à votre page Facebook et y répondre automatiquement. Cependant, il n'a pas la permission d'accéder à d'autres informations ou de modifier les paramètres de la page.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-header" data-aos="fade-up">
+                <h2>Contactez-nous</h2>
+                <p>Vous avez une question ou une demande ? N'hésitez pas à nous contacter par l'un des moyens suivants.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Informations de contact</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt" style="color: rgb(61, 44, 97); font-size: 27px;"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Où nous trouver</h4>
+                            <p>RQ35, Rue Mokhtar Zayati, Sfax</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope" style="color: rgb(61, 44, 97); font-size: 27px;"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <a href="mailto:contact@Tuniflow.com">contact@Tuniflow.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"style="color: rgb(61, 44, 97); font-size: 27px;"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Appelez-nous</h4>
+                            <a href="tel:+21655009365">+216 55 009 365</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock" style="color: rgb(61, 44, 97); font-size: 27px;"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Horaires d'ouverture</h4>
+                            <p>Lundi - Vendredi : 8h00 - 16h00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm"  method="POST">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Envoyer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+            <div style="flex: 1; min-width: 250px;">
+                <h4 style="font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #ffffff;">Tuniflow.com</h4>
+                <p style="font-size: 14px; color: #d1d5db; line-height: 1.6;">
+                    Tuniflow est une plateforme intelligente conçue pour automatiser les conversations des pages Facebook en dialecte tunisien et améliorer l'expérience client.
+                </p>
+                <div style="margin-top: 20px;">
+                    <img src="/assets/images/logo/pixelflow.png" alt="pixelflow-logo" style="height: 70px;">
+                    <p style="font-size: 12px; color: #9ca3af; margin-top: 5px;">
+                        Un produit développé et exploité par <strong>Pixelflow TN</strong>
+                    </p>
+                </div>
+
+                <div style="margin-top: 20px; display: flex; gap: 15px;">
+                    <a href="#" style="color: #9ca3af; font-size: 24px; transition: color 0.3s;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" style="color: #9ca3af; font-size: 24px; transition: color 0.3s;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" style="color: #9ca3af; font-size: 24px; transition: color 0.3s;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" style="color: #9ca3af; font-size: 24px; transition: color 0.3s;">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 18px; margin-bottom: 15px; color: #ffffff;">Liens rapides</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2.5;">
+                    <li><a href="#home" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>Accueil</a></li>
+                    <li><a href="#about" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>Fonctionnalités</a></li>
+                    <li><a href="#pricing" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>Tarification</a></li>
+                    <li><a href="#contact" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>Contactez-nous</a></li>
+                    <li><a href="/policy.html" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>Politique de confidentialité</a></li>
+                    <li><a href="/terms.html" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>Conditions d'utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid #374151; margin-top: 40px; padding-top: 20px; text-align: center;">
+            <p style="font-size: 14px; color: #9ca3af;">
+                <i class="far fa-copyright"></i> 2025 Tuniflow. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+     <script src="/assets/js/script.js"></script>
+    
+
+</body>
+</html>

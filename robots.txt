@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+# Empêcher l'indexation des pages administratives
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://www.tuniflow.com/sitemap.xml

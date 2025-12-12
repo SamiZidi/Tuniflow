@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="/assets/images/meta.jpg" />
+    <title>Tuniflow.com - أنشئ روبوتات دردشة ذكية لخدمة العملاء</title>
+    <link rel="icon" href="/assets/images/favicon/favicon.png" type="image/x-icon">
+    
+    <!-- External Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Arabic Font Support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="/assets/css/main.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+        }
+        
+        p, li, a, button {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="header"  dir="ltr">
+        <div class="logo-container">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="mob-logo" src="/assets/images/logo/logo (1).png" width="200px" alt="Tuniflow Logo">
+        </div>
+        
+        <div class="desktop-menu" dir="ltr">
+            <a href="#home" class="logo"><img src="/assets/images/logo/logo (1).png" width="200px" alt="Tuniflow Logo"></a>
+            <ul class="nav-links">
+                <li><a href="#home">الصفحة الرئيسية</a></li>
+                <li><a href="#about">المميزات</a></li>
+                <li><a href="#pricing">التسعيرة</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            
+            <div class="auth-buttons">
+                <a href="https://app.tuniflow.com">
+                    <button class="auth-button login">الدخول</button>
+                </a>
+                <a href="https://app.tuniflow.com/register">
+                   <button class="auth-button signup">التسجيل</button>
+                </a>
+            </div>
+
+            <div class="lang-switcher">
+                <a href="/" class="lang-btn" data-lang="fr">FR</a>
+                <span class="lang-separator">|</span>
+                <a href="/arabic.html" class="lang-btn active" data-lang="ar">عربي</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-nav">
+        <div class="nav-container">
+            <div class="close-menu" onclick="toggleMenu()">✕</div>
+            <div class="mobile-logo-container">
+                <a href="#home" class="mobile-logo"><img src="/assets/images/logo/logo (1).png" width="120px" alt="Tuniflow Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" onclick="toggleMenu()">الصفحة الرئيسية</a></li>
+                <li><a href="#about" onclick="toggleMenu()">المميزات</a></li>
+                <li><a href="#pricing" onclick="toggleMenu()">التسعيرة</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">تواصل معنا</a></li>
+            </ul>
+            
+            <div class="auth-buttons">
+                <a href="https://app.tuniflow.com">
+                    <button class="auth-button login">الدخول</button>
+                </a>
+                <a href="https://app.tuniflow.com/register">
+                    <button class="auth-button signup">التسجيل</button>
+                </a>
+            </div>
+            
+            <div class="lang-switcher">
+                <a href="/" class="lang-btn" data-lang="fr">FR</a>
+                <span class="lang-separator">|</span>
+                <a href="/arabic.html" class="lang-btn active" data-lang="ar">عربي</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>حسّن خدمة الحرفاء متاعك مع بوت ذكي</h1>
+                <p>كثرت عليك الرسائل وما لقيتش وقت تجاوب؟! خلي البوت يجاوب عليك! تونسي، يفهم الدارجة ويجاوب في لحظة.</p>
+                <a href="https://app.tuniflow.com" class="cta-button">
+                    <i class="fas fa-rocket"></i> إبدأ الآن!
+                </a>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="/assets/images/phone.png" alt="روبوت الدردشة على الهاتف المحمول">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">أهم الميزات</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <img src="/assets/images/icons/communication.png" width="80px">
+                    </div>
+                    <h3>فهم الدارجة التونسية 100%</h3>
+                    <p>استعمل NLP fine-tuned model يفهم مختلف اللهجات التونسية وحتى الأخطاء اللغوية.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                         <img src="/assets/images/icons/artificial-intelligence.png" width="80px">
+                    </div>
+                    <h3>ردود ذكية (Smart Responses)</h3>
+                    <p>مدعوم بأحدث تقنيات الذكاء الاصطناعي من ChatGPT، يعطيك تجربة حديث طبيعية تحس روحك تحكي مع إنسان بالحق!</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <img src="/assets/images/icons/web-page-customisation.png" width="80px">
+                    </div>
+                    <h3>تخصيص حسب مجالك</h3>
+                    <p>يمكن تخصيصه حسب نوع الخدمة أو مجال المبيعات متاعك. يعني البوت يقدر يفهم ويجاوب على أسئلة متعلقة بمجالك.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <img src="/assets/images/icons/social-media1.png" width="80px">
+                    </div>
+                    <h3>شبكات التواصل الاجتماعي</h3>
+                    <p>ربط بوتك مع الفيسبوك، وخلّي الحرفاء يتواصلوا معاك مباشرة من المنصات اللي يستعملوها.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <img src="/assets/images/icons/data-analysis.png" width="80px">
+                    </div>
+                    <h3>إحصائيات وتحليل</h3>
+                    <p>Dashboard تعرض أكثر الأسئلة شيوعًا، عدد الطلبات، نسبة التحويل...</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <img src="/assets/images/icons/2370558-200.png" width="80px">
+                    </div>
+                    <h3>إجابات فورية</h3>
+                    <p>البوت يجاوب بسرعة ودقة على أسئلة الحرفاء، ويعطيهم المعلومات اللي يحبّوها في ثواني.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-icon">
+                         <img src="/assets/images/icons/easy-to-use.png" width="80px">
+                    </div>
+                    <h3>سهولة الاستعمال</h3>
+                    <p>الواجهة متاع البوت بسيطة وسهلة الفهم، حتى الحريف يقدر يتعامل معاه بكل سهولة.</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="feature-icon">
+                         <img src="/assets/images/icons/box.png" width="80px">
+                    </div>
+                    <h3>إدارة الطلبيات</h3>
+                    <p>البوت ينجم يعاون الحريف باش يعمل الطلبات، ويتأكد من معلومات الطلب بكل سهولة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">كيفاش يخدم</h2>
+            <div class="steps">
+                <div class="step" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3>سجل</h3>
+                    <p>اعمل حساب جديد على منصتنا باش تبدأ تستخدم الخدمات اللي نقدموها.</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h3>إنشاء البوت</h3>
+                    <p>قوم بإنشاء البوت الخاص بك على المنصة باش تبدأ في تخصيصه وتحديد الوظائف اللي تحبها.</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h3>خصص البوت</h3>
+                    <p>عدّل في ملامح البوت باش يتماشى مع احتياجاتك ويكون على ذوقك.</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <h3>ربط البوت بصفحة فيسبوك</h3>
+                    <p>وصل البوت بصفحتك على فيسبوك باش يجاوب على الرسائل تلقائيًا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container" data-aos="fade-up">
+            <h2>تحب تحسن تجربة الحرفاء على صفحة الفيسبوك وتخليها أسهل وأسرع؟</h2>
+            <p>انضم للمئات من الشركات اللي حسّنت تجربة الحرفاء متاعها بفضل البوتات الذكية متاعنا.</p>
+            <a href="https://app.tuniflow.com/register" class="cta-button-white">
+                <i class="fas fa-gift"></i> جربه مجانًا
+            </a>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">التسعيرة</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card" data-aos="fade-up">
+                    <h3>الباقة المتوسطة</h3>
+                    <div class="price">60 دينار<span>/شهر</span></div>
+                    <ul class="features-list">
+                        <li>حتى 100 رسالة في اليوم</li>
+                        <li>دعم فيسبوك وانستغرام</li>
+                        <li>لوحة تحليلات</li>
+                        <li>دعم العملاء ذو الأولوية</li>
+                    </ul>
+                    <a href="#" class="subscribe-button primary-button">اشترك الآن</a>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up">
+                    <h3>الباقة المتوسطة</h3>
+                    <div class="price">60 دينار<span>/شهر</span></div>
+                    <ul class="features-list">
+                        <li>حتى 100 رسالة في اليوم</li>
+                        <li>دعم فيسبوك وانستغرام</li>
+                        <li>لوحة تحليلات</li>
+                        <li>دعم العملاء ذو الأولوية</li>
+                    </ul>
+                    <a href="#" class="subscribe-button primary-button">اشترك الآن</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up">
+                    <h3>الباقة المتوسطة</h3>
+                    <div class="price">60 دينار<span>/شهر</span></div>
+                    <ul class="features-list">
+                        <li>حتى 100 رسالة في اليوم</li>
+                        <li>دعم فيسبوك وانستغرام</li>
+                        <li>لوحة تحليلات</li>
+                        <li>دعم العملاء ذو الأولوية</li>
+                    </ul>
+                    <a href="#" class="subscribe-button primary-button">اشترك الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <div class="faq-container">
+        <div class="faq-header" data-aos="fade-up">
+            <h2>الأسئلة المتكررة</h2>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-question">
+                شنوّة الخدمة اللي تقدّمها؟
+            </div>
+            <div class="faq-answer">
+                <p>نقدّم خدمة بوت للتواصل التلقائي على صفحات الفيسبوك، حيث يتم الرد تلقائيًا على رسائل الزبائن والإجابة على استفساراتهم 24/7 بشكل سريع وفعّال.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="faq-question">
+                هل يوجد اشتراك شهري/سنوي؟
+            </div>
+            <div class="faq-answer">
+                <p>نعم، لدينا خطط اشتراك شهريّة وسنوية. تختلف الأسعار حسب الميزات التي تختارها وحجم الصفحات التي تريد ربطها مع البوت.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-question">
+                كيفاش نتحقّق من أن البوت ربط بالصفحة بنجاح؟
+            </div>
+            <div class="faq-answer">
+                <p>بعد ربط البوت بالصفحة، يمكنك التحقق من ذلك من خلال اختبار إرسال رسالة إلى الصفحة ورؤية إذا كان البوت يرد عليها بشكل صحيح.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="faq-question">
+                هل البوت يشارك بيانات الزبائن مع طرف ثالث؟
+            </div>
+            <div class="faq-answer">
+                <p>لا، نحن نحترم خصوصية بيانات الزبائن بشكل كامل ولا نشاركها مع أي طرف ثالث بدون إذن صريح من المستخدم.</p>
+            </div>
+        </div>
+
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="faq-question">
+                شنوّة صلاحيات البوت في صفحة فيسبوك؟
+            </div>
+            <div class="faq-answer">
+                <p>البوت يقدر يقرأ الرسائل التي تُرسل إلى صفحة فيسبوك الخاصة بك ويرد عليها بشكل تلقائي. لكن ما عندوش صلاحيات للوصول إلى معلومات إضافية أو تعديل إعدادات الصفحة.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-header" data-aos="fade-up">
+                <h2>تواصل معنا</h2>
+                <p>عندك سؤال ولا استفسار؟ ما تترددش وتواصل معانا عبر أي وسيلة من الوسائل التالية.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>معلومات الاتصال</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt" style="color: rgb(61, 44, 97); font-size: 27px;"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>وين موجودين</h4>
+                            <p>RQ35+XHF، شارع مختار زياتي، صفاقس</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope" style="color: rgb(61, 44, 97); font-size: 27px;"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>بريد إلكتروني</h4>
+                            <a href="mailto:contact@Tuniflow.com">contact@Tuniflow.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone" style="color: rgb(61, 44, 97); font-size: 27px;"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>اتصل بينا</h4>
+                            <a href="tel:+21655009365">55009365 216+</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock" style="color: rgb(61, 44, 97); font-size: 27px;"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>مواعيد العمل</h4>
+                            <p>الإثنين - الجمعة: 8:00 صباحًا - 4:00 مساءً</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>ابعثلنا رسالة</h3>
+                    <form id="contactForm" method="POST">
+                        <input type="text" name="_gotcha" style="display:none">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="إسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="بريدك الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="الموضوع">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" placeholder="رسالتك" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> ارسال
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+            <div style="flex: 1; min-width: 250px;">
+                <h4 style="font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #ffffff;">Tuniflow.com</h4>
+                <p style="font-size: 14px; color: #d1d5db; line-height: 1.6;">
+                    Tuniflow هي منصّة ذكية صُمّمت لأتمتة محادثات صفحات فيسبوك باللهجة التونسية وتحسين تجربة الحريف.
+                </p>
+                <div style="margin-top: 20px;">
+                    <img src="/assets/images/logo/pixelflow.png" alt="pixelflow-logo" style="height: 70px;">
+                    <p style="font-size: 12px; color: #9ca3af; margin-top: 5px;">
+                        منتج تطوّره وتشغّله شركة <strong>Pixelflow TN</strong>
+                    </p>
+                </div>
+
+                <div style="margin-top: 20px; display: flex; gap: 15px;">
+                    <a href="#" style="color: #9ca3af; font-size: 24px; transition: color 0.3s;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" style="color: #9ca3af; font-size: 24px; transition: color 0.3s;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" style="color: #9ca3af; font-size: 24px; transition: color 0.3s;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" style="color: #9ca3af; font-size: 24px; transition: color 0.3s;">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 18px; margin-bottom: 15px; color: #ffffff;">روابط سريعة</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2.5;">
+                    <li><a href="#home" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>الصفحة الرئيسية</a></li>
+                    <li><a href="#about" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>المميزات</a></li>
+                    <li><a href="#pricing" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>التسعيرة</a></li>
+                    <li><a href="#contact" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>تواصل معنا</a></li>
+                    <li><a href="#" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>سياسة الخصوصية</a></li>
+                    <li><a href="#" style="color: #9ca3af; text-decoration: none; transition: color 0.3s;"><i class="fas fa-chevron-right" style="font-size: 12px; margin-right: 8px;"></i>الشروط والأحكام</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid #374151; margin-top: 40px; padding-top: 20px; text-align: center;">
+            <p style="font-size: 14px; color: #9ca3af;">
+                <i class="far fa-copyright"></i> 2025 Tuniflow. جميع الحقوق محفوظة.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
