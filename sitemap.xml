@@ -36,16 +36,16 @@
     <priority>0.2</priority>
   </url>
 
-  <!-- Arabic version  -->
+  <!-- Arabic version -->
   <url>
-    <loc>https://www.tuniflow.com/arabic.html</loc>
+    <loc>https://www.tuniflow.com/ar.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- French version (if exists) -->
+  <!-- French version -->
   <url>
-    <loc>https://www.tuniflow.com</loc>
+    <loc>https://www.tuniflow.com/fr.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
